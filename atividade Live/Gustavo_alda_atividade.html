@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<script src= "eventos.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" 
+    integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" 
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Organizador de Eventos Online</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="free-logo.jpg" alt="Logo Shell" style="height: 150px; opacity: 0.35";>
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="http://github.com/alda510">github do criador</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/gustavo-alda-martins-996116232">linkedin do brabo</a>
+            </li>
+            <li>
+                <a target="_blank" href="http://wa.me/44991430855">solta o zap!</a>
+            </li>
+        
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Round Shell</h1>
+                <h5>Organizadora e Locadora de Eventos</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    A Round Shell foi idealizada em 2022, durante uma atividade proposta como prova
+                    de aprendizagem. <br>
+                    Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!
+                    Per aumento de cachacis, eu reclamis.
+                    Suco de cevadiss deixa as pessoas mais interessantis.Admodum accumsan disputationi eu sit. 
+                    Vide electram sadipscing et per.
+                </p>
+            </div>
+            <div class="form1">
+                <div>
+                    <p>deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email!"> 
+                    <button class="button">enviar!</button> 
+                </form>
+                <br>
+                <br>
+            </div style="display: none"; id="about2">
+                <p>
+                    saca só alguns eventos que já estão rolando!
+                </p>
+                <!-- Peguei esse modelo de seeção do https://www.tutorialspoint.com/Create-a-selectable-list-in-HTML#:~:
+                    text=Use%20the%20tag%20to,for%20defining%20a%20select%20list.&text=Specifies%20that%20on%20page%20load
+                    ,list%20should%20automatically%20get%20focus.-->
+                <form action = "" method = "post">
+                    <select size="1" name = "dropdown">
+                       <option value = "Evento 1" selected>Bicicletada na catedral!</option>
+                       <option value = "Evento 2">Grande Cavação de Buraco! VII ed.</option>
+                       <option value = "Evento 3">Feira de Abacates da Vovó Jujuba!</option>
+                    </select>
+            </div>
+            <div class="label">
+                <label for="eventname">
+                    <br>
+                    <br> 
+                        <h3>mas eai?</h3>
+                        <h3>nos conte mais sobre seu evento!</h3> 
+                    <br>
+            </div>
+            <!-- Aqui eu tentei fazer função em que as infos adicionadas pelo usuario
+            aparecessem em uma "lista" dentro do site, utilizando a tarefa disponibili
+            zada pelo Fukuda como base, mas não consegui fazer ela se encaixar no modelo
+            que eu criei. Suspeito que a lista nâo está sendo recebida, uma vez que o 
+            próprio console do navegador não aponta um erro, apenas um 'Uncaught'
+            momentâneo que desaparece em 1 segundo -->
+            <div id="form2">
+                <fieldset style="border: none;">
+                    <form action="">
+                        <label style="display: block">
+                            qual o nome do evento? 
+                            <br>
+                            <input type="text" id="title" required>
+                        </label>
+                        <label style="display: block">
+                            e onde ele vai ser/começar? 
+                            <br>
+                            <input type="text" id="local" required>
+                        </label>
+                        <label style="display: block">
+                            e quando vai ser? #ansiosos <br>
+                            <input type="date" id="data">
+                        </label>
+                        <label style="display: block">
+                            diz pra gente ai um pouco sobre ele! <br>
+                            <textarea id="description" rows="4" cols="50"></textarea>
+                        </label>            
+                    </form>
+                    <button class="button" 
+                        onclick="AddTodo()" 
+                        id="button_send"
+                        type="submit">
+                        pode colocar na agenda!
+                    </button>
+                </fieldset>
+            </div>
+            <div id="todo">
+            </div>
+        </section>
+        <br>   
+        </main>
+</body>
+</html>
