@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Content</title>
+    <style>
+        .center{
+            text-align: center;
+        }
+        .container{
+            height: 350px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            margin: 5px;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="center">Stretch</h1>
+    <div class="container stretch">
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+    </div>
+
+    <h1 class="center">Center</h1>
+    <div class="container center">
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+    </div>
+
+    <h1 class="center">Flex-Start</h1>
+    <div class="container center flex-start">
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+    </div>
+
+    <h1 class="center">Flex-End</h1>
+    <div class="container center flex-end">
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+    </div>
+
+    <h1 class="center">space-around</h1>
+    <div class="container center space-around">
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+    </div>
+
+    <h1 class="center">space-between</h1>
+    <div class="container center space-between">
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis.</div>
+    </div>
+</body>
+</html>
