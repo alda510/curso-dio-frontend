@@ -11,7 +11,7 @@ const funcionario2: {codigo: number, nome: string} = {
 }
 
 // Respostas 3 e 4
-interface Funcionario {  // Já conhece interfaces? https://blog.logrocket.com/types-vs-interfaces-in-typescript/
+interface Funcionario {
     codigo: number,
     nome: string
 };
